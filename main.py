@@ -19,7 +19,7 @@ e con la possibilità di scaricarlo corretto una volta premuto il bottone "salva
 """, unsafe_allow_html=True)
 
 # --- CARICAMENTO DATI ---
-df = pd.read_excel("ARCHIVIO COMPLETO 2024 aggiornato.xlsx")
+df = pd.read_excel("./ARCHIVIO COMPLETO 2024 aggiornato.xlsx")
 df['DIFFICOLTA'] = df['DIFFICOLTA'].astype(str)
 df["DIFFICOLTA"] = df["DIFFICOLTA"].replace("nan", "-")
 
