@@ -15,13 +15,13 @@ st.sidebar.title("GUIDA ALL'USO")
 st.sidebar.markdown(
     """
 Questo è l'Archivio completo della banda aggiornato a novembre 2024.<br><br>
-I possibili errori che si possono riscontrare nella ricerca dei brani sono 
-possibili errori di battitura nelle colonne che non sono **CLASSIFICATORE**, 
+Si possono riscontrare errori nella ricerca dovuti ad errori nella scrittura dei dati (es. Grna Vrietà)
+La colonna che non presenta errori è **CLASSIFICATORE**, 
 in quanto è da ritenersi la fonte più affidabile per la ricerca dei brani.<br><br>
 Digitando il titolo, potrebbe non esserci una corrispondenza.
 
 Per garantire la possibilità di correzioni se si trovano errori, è possibile modificare il file 
-che viene esposto, che verrà salvato con le correzioni 
+che viene esposto, che verrà salvato con le correzioni (verrà valutato se mantenerla da me)
 e con la possibilità di scaricarlo corretto una volta premuto il bottone "salva modifiche".
 """,
     unsafe_allow_html=True,
