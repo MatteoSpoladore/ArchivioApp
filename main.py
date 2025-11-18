@@ -28,7 +28,7 @@ e con la possibilità di scaricarlo corretto una volta premuto il bottone "salva
 )
 
 # --- CARICAMENTO DATI ---
-df = pd.read_excel("./ARCHIVIO COMPLETO 2024 aggiornato.xlsx")
+df = pd.read_excel("./Archivio 2025.xlsx")
 df["DIFFICOLTA"] = df["DIFFICOLTA"].astype(str)
 df["DIFFICOLTA"] = df["DIFFICOLTA"].replace("nan", "-")
 
@@ -98,7 +98,7 @@ if st.button("💾 Salva modifiche"):
         df_originale.update(edited_df)
 
         # Salva tutto il DataFrame originale aggiornato
-        df_originale.to_excel("ARCHIVIO COMPLETO 2024 aggiornato.xlsx", index=False)
+        df_originale.to_excel("Archivio 2025.xlsx", index=False)
         st.success("✅ Modifiche salvate correttamente su tutto l'archivio!")
     except Exception as e:
         st.error(f"Errore durante il salvataggio: {e}")
