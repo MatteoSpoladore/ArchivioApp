@@ -92,16 +92,16 @@ st.subheader("📝 Modifica i dati se necessario:")
 edited_df = st.data_editor(df_filtered, height=500, num_rows="dynamic")
 
 # --- SALVATAGGIO MODIFICHE NEL DATAFRAME ORIGINALE ---
-if st.button("💾 Salva modifiche"):
-    try:
-        # ripristina l'indice originale sull'edited_df
-        if "__orig_index" in edited_df.columns:
-            edited_df.set_index("__orig_index", inplace=True)
-        # Aggiorna SOLO le righe corrispondenti nel df_originale
-        df_originale.update(edited_df)
+# if st.button("💾 Salva modifiche"):
+#     try:
+#         # ripristina l'indice originale sull'edited_df
+#         if "__orig_index" in edited_df.columns:
+#             edited_df.set_index("__orig_index", inplace=True)
+#         # Aggiorna SOLO le righe corrispondenti nel df_originale
+#         df_originale.update(edited_df)
 
-        # Salva tutto il DataFrame originale aggiornato
-        df_originale.to_excel("Archivio 2025.xlsx", index=False)
-        st.success("✅ Modifiche salvate correttamente su tutto l'archivio!")
-    except Exception as e:
-        st.error(f"Errore durante il salvataggio: {e}")
+#         # Salva tutto il DataFrame originale aggiornato
+#         df_originale.to_excel("Archivio 2025.xlsx", index=False)
+#         st.success("✅ Modifiche salvate correttamente su tutto l'archivio!")
+#     except Exception as e:
+#         st.error(f"Errore durante il salvataggio: {e}")
