@@ -94,6 +94,9 @@ edited_df = st.data_editor(df_filtered, height=500, num_rows="dynamic")
 # --- SALVATAGGIO MODIFICHE NEL DATAFRAME ORIGINALE ---
 if st.button("💾 Salva modifiche"):
     try:
+        # ripristina l'indice originale sull'edited_df
+        if "__orig_index" in edited_df.columns:
+            edited_df.set_index("__orig_index", inplace=True)
         # Aggiorna SOLO le righe corrispondenti nel df_originale
         df_originale.update(edited_df)
 
