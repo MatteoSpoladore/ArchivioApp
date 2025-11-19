@@ -88,8 +88,8 @@ def advanced_search(df, search_input):
 df_filtered = advanced_search(df, search_input)
 
 # --- MODIFICA DEL DATAFRAME FILTRATO ---
-st.subheader("📝 Modifica i dati se necessario:")
-edited_df = st.data_editor(df_filtered, height=500, num_rows="dynamic")
+# st.subheader("📝 Modifica i dati se necessario:")
+# edited_df = st.data_editor(df_filtered, height=500, num_rows="dynamic")
 
 # --- SALVATAGGIO MODIFICHE NEL DATAFRAME ORIGINALE ---
 # if st.button("💾 Salva modifiche"):
